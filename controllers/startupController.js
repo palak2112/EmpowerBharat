@@ -35,7 +35,7 @@ module.exports.editProfile= async(req,res)=>{
     try{
         const id= req.query.id;
      
-        const Userdata = await  Investor.findByIdAndUpdate({_id:id},{$set:{ 
+        const Userdata = await  Startup.findByIdAndUpdate({_id:id},{$set:{ 
             companyName:req.body.name,
             email:req.body.email,
             Address:req.body.address,

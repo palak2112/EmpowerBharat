@@ -12,7 +12,7 @@ router.post('/edit',passport.checkAuthentication,startupsController.editProfile)
 //use passport as a middleware to authenticate
 router.post('/create-session', passport.authenticate(
     'startup-local', //strategy to use
-    {failureRedirect: '/learn'}
+    {failureRedirect: '/login'}
 ) ,startupsController.createSession);
 
 
