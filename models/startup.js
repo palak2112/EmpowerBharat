@@ -28,6 +28,7 @@ const startupSchema = new mongoose.Schema({
     },
     Address:{
         type:String
+        
     },
     City:{
         type:String
@@ -37,7 +38,20 @@ const startupSchema = new mongoose.Schema({
     },
     Code:{
         type:String
+    },
+    Logo:{
+        type:String,
+    },
+    Website:{
+        type:String
+    },
+    Category:{
+        type:String
+    },
+    Product:{
+        type:String
     }
+
 });
 
 const Startup = mongoose.model('Startup',startupSchema);

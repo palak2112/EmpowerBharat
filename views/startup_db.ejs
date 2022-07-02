@@ -178,6 +178,31 @@
                       <input name="email" type="email" id="input-email" class="form-control form-control-alternative" placeholder="Email" value= <%= user.email%> >
                     </div>
                   </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-email">Category</label>
+                      <input name="category" type="text" class="form-control form-control-alternative" placeholder="Category" value= <%= user.Category%> >
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-email">Product</label>
+                      <input name="product" type="text"  class="form-control form-control-alternative" placeholder="Link" value= <%= user.Product%> >
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-email">Logo </label>
+                      <input name="logo" type="text"  class="form-control form-control-alternative" placeholder="Link" value= <%= user.Logo%> >
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-email">Website</label>
+                      <input name="website" type="text"  class="form-control form-control-alternative" placeholder="Link" value= <%= user.Website%> >
+                    </div>
+                  </div>
                 </div>
                 
                 
@@ -211,12 +236,12 @@
                   <div class="col-lg-4">
                     <div class="form-group">
                       <label class="form-control-label" for="input-country">Postal code</label>
-                      <input name="code" type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal Code" value="<%= user.Country%>>
+                      <input name="code" type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal Code" value=<%= user.Country%>
                     </div>
                   </div>
                 </div>
               </div>
-              <hr class="my-4">
+              <!-- <hr class="my-4"> -->
               <!-- Description -->
               <input type="submit"  class="btn btn-sm btn-primary" value="Save Changes" />
             </form>

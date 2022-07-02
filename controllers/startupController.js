@@ -4,8 +4,11 @@ module.exports.create = function(req,res){
     Startup.findOne({email: req.body.email},function(err, startup){
         if(err){console.log('Error in finding startup in database'); return;}
         if(!startup){
+            console.log(req.body);
             Startup.create(req.body, function(err,startupCreated){
-                if(err){console.log('Error in creating investor'); return;}
+                if(err){console.log('Error in creating startup');
+
+                 return;}
                 console.log('Investor Created:',startupCreated);
                 return res.redirect('/');
             });
@@ -41,7 +44,11 @@ module.exports.editProfile= async(req,res)=>{
             Address:req.body.address,
             City:req.body.city,
             Country:req.body.country,
-            Code:req.body.code
+            Code:req.body.code,
+            Category: req.body.category,
+            Product: req.body.product,
+            Logo: req.body.logo,
+            Website: req.body.website
         }});
         
 

@@ -125,10 +125,12 @@
             <li data-filter=".filter-ph">Pharma</li>
             <li data-filter=".filter-card">Technology</li>
             <li data-filter=".filter-web">Travel</li>
+            <li data-filter=".filter-cosmetics">Cosmetics</li>
+            <li data-filter=".filter-food">Food</li>
           </ul>
         </div>
       </div>
-
+      
       <div class="row portfolio-container">
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-ph" style="text-align: center;">
@@ -226,8 +228,43 @@
           <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
           <a href="" class="button3" style="margin-top: 10px;">Follow</a>
         </div>
-
         
+        <!-- <% if(locals.user){ %>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="text-align: center;">
+          <div class="portfolio-wrap">
+            <img src="<%= user.Logo%>" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><%= user.companyName%></h4>
+              <p><%= user.Category%></p>
+            </div>
+            <div class="portfolio-links">
+              <a href="<%= user.Product%>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="<%= user.Website%>" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
+          <a href="" class="button3" style="margin-top: 10px;">Follow</a>
+        </div>
+        <% } %> -->
+
+        <% for(let i of list){%> 
+          <!-- console.log(i); -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-<%=i.Category%>" style="text-align: center;">
+            <div class="portfolio-wrap">
+              <img src="<%= i.Logo%>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><%= i.companyName%></h4>
+                <p><%= i.Category%></p>
+              </div>
+              <div class="portfolio-links">
+                <a href="<%= i.Product%>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="<%= i.Website%>" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
+            <a href="" class="button3" style="margin-top: 10px;">Follow</a>
+          </div>
+        <% }%>
       </div>
 
     </div>
