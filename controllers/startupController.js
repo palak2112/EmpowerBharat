@@ -33,7 +33,7 @@ module.exports.destroySession = function(request,response){
 }
 
 
-// ======= user-profile-update ==============
+// ======= user-profile-update ==============//
 module.exports.editProfile= async(req,res)=>{
     try{
         const id= req.query.id;
@@ -57,6 +57,21 @@ module.exports.editProfile= async(req,res)=>{
     }
 
     return res.redirect('/startup_db');
+
+
+}
+
+
+// ======= profile-about-section ==============//
+
+module.exports.about= async(req,res)=>{
+    try{
+        const id= req.query.id;
+        const companyInfo = await  Startup.findById({_id:id});
+        res.render('startup_about',{info: companyInfo} );
+    }catch{
+        console.log(error.message);
+    }
 
 
 }

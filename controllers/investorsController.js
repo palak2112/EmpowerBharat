@@ -38,7 +38,8 @@ module.exports.editProfile= async(req,res)=>{
         const Userdata = await  Investor.findByIdAndUpdate({_id:id},{$set:{ 
             name:req.body.name,
             email:req.body.email,
-            phone:req.body.phone
+            phone:req.body.phone,
+            image:req.body.image
 
         }});
         
@@ -48,6 +49,22 @@ module.exports.editProfile= async(req,res)=>{
     }
 
     return res.redirect('/investor_db');
+
+
+}
+
+
+// ======= profile-about-section ==============//
+
+module.exports.about= async(req,res)=>{
+    
+    try{
+        const id= req.query.id;
+        const investorInfo = await Investor.findById({_id:id});
+        res.render('investor_about',{info: investorInfo} );
+    }catch{
+        console.log(error.message);
+    }
 
 
 }

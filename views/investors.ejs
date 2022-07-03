@@ -50,9 +50,17 @@
         <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
         <% if(locals.user){ %>
           <% if(locals.user.companyName){ %>
+<<<<<<< Updated upstream
             <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #0A0A55;"> Sign Out  </span></a></li>
             <% }else{ %>
               <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #0A0A55;"> Sign Out </span></a>
+=======
+            <li><a class="nav-link scrollto" href="/startup_db"><span style="color: #957DAD;"> Profile  </span></a></li>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #957DAD;"> Sign Out  </span></a></li>
+            <% }else{ %>
+              <li><a class="nav-link scrollto" href="/investor_db"><span style="color: #957DAD;"> Profile  </span></a></li>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #957DAD;"> Sign Out </span></a>
+>>>>>>> Stashed changes
               </li>
             <% } %>
         <% }else{ %>
@@ -65,7 +73,8 @@
   </div>
 </header><!-- End Header -->
 <!-- End Header -->
-
+<% if(locals.user){ %>
+  <% }else{ %>
 <!-- ======= StartUps Section ======= -->
 <section id="portfolio" class="portfolio section-bg">
     <div class="container">
@@ -82,7 +91,7 @@
     </div>
   </section>
 <!-- End StartUps Section -->
-
+<% } %>
 <!-- ======= Our Team Section ======= -->
   <section id="team" class="team">
     <div class="container">
@@ -229,6 +238,28 @@
           </div>
         </div>
 
+        <% for(let i of list){%> 
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="<%= i.image%>" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4><%= i.name%></h4>
+                  <span><%= i.company%></span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-envelope-fill"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="/investor/about?id=<%=i._id%>" title="About"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <% }%>
+
+
       </div>
 
 
@@ -237,7 +268,8 @@
   </section><!-- End Our Team Section -->
 
 <!-- End  -->
-
+<% if(locals.user){ %>
+  <% }else{ %>
   <section class="cta">
     <div class="container">
 
@@ -248,7 +280,7 @@
 
     </div>
   </section>
-
+  <% } %>
   <br>
   
 

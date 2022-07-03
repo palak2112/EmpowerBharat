@@ -45,9 +45,11 @@
         <li><a class="nav-link scrollto" href="/learn">Goverment Schemes</a></li>
         <% if(locals.user){ %>
           <% if(locals.user.companyName){ %>
-            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #0A0A55;"> Sign Out  </span></a></li>
+            <li><a class="nav-link scrollto" href="/startup_db"><span style="color: #957DAD;"> Profile  </span></a></li>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #957DAD;"> Sign Out  </span></a></li>
             <% }else{ %>
-              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #0A0A55;"> Sign Out </span></a>
+              <li><a class="nav-link scrollto" href="/investor_db"><span style="color: #957DAD;"> Profile  </span></a></li>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #957DAD;"> Sign Out </span></a>
               </li>
             <% } %>
         <% }else{ %>
@@ -259,6 +261,8 @@
               <div class="portfolio-links">
                 <a href="<%= i.Product%>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="<%= i.Website%>" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="/startup/about?id=<%=i._id%>" title="About"><i class="bx bx-link"></i></a>
+
               </div>
             </div>
             <a href="/razorpay" class="button3" style="margin-top: 10px;">Invest</a>
@@ -270,7 +274,10 @@
     </div>
   </section><!-- End StartUps Section -->
 
-
+  
+    <% if(locals.user){ %>
+ 
+      <% }else{ %>
   <section class="cta">
     <div class="container">
 
@@ -281,6 +288,7 @@
 
     </div>
   </section>
+  <% } %>
    <!-- ======= Our Team Section ======= -->
    <section id="team" class="team">
     <div class="container">

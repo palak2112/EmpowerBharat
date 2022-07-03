@@ -1,4 +1,5 @@
 const Startup = require('../models/startup');
+const Investor = require('../models/investor');
 
 module.exports.home = function(req,res){
     if(res.locals.user){
@@ -26,8 +27,14 @@ module.exports.startups = async(req,res)=>{
   
 }
 
-module.exports.investors = function(req,res){
-    return res.render('investors');
+module.exports.investors = async(req,res)=>{
+    try{
+        const investorList= await Investor.find();
+        res.render('investors',{list: investorList} );
+    }catch{
+        console.log(error.message);
+    }
+   
 }
 
 module.exports.learn = function(req,res){

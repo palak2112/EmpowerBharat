@@ -368,10 +368,7 @@ hr {
       flex: 0 0 50%;
     }
   
-    .col-lg-7 {
-      /* max-width: 58.33333%; */
-      /* flex: 0 0 58.33333%; */
-    }
+    
   
     .order-lg-2 {
       order: 2;
