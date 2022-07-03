@@ -46,13 +46,13 @@
         <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
         <% if(locals.user){ %>
           <% if(locals.user.companyName){ %>
-            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #957DAD;"> Sign Out  </span></a></li>
+            <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #0A0A55;"> Sign Out  </span></a></li>
             <% }else{ %>
-              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #957DAD;"> Sign Out </span></a>
+              <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #0A0A55;"> Sign Out </span></a>
               </li>
             <% } %>
         <% }else{ %>
-              <li><a class="nav-link scrollto" href="/login"><span style="color: #957DAD;">Sign In</span></a></li>
+              <li><a class="nav-link scrollto" href="/login"><span style="color: #0A0A55;">Sign In</span></a></li>
             <% } %>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
@@ -81,7 +81,7 @@
           <%if(locals.user){%>
           <h1 class="display-2 text-center"> <%= user.name%></h1>
           <p class="mt-0 mb-5">CEO, <%= user.company%></p>
-          <a href="#!" class="btn btn-info" style="background-color: #D291BC;">Edit profile</a>
+          <a href="#!" class="btn btn-info" style="background-color: #FDBC02;">Edit profile</a>
         </div>
         <% } %>
 
@@ -347,33 +347,33 @@
             <h4>Useful Links</h4>
             <ul>
               
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Startups in Buzz</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#info-box">FAQs</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="#portfolio">Startups in Buzz</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="#info-box">FAQs</a></li>
             </ul>
           </div>
         
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/startups">Startups</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/investors">Investors</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/featured">Featured</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/schools_colleges">Schools/Colleges</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/learn">Learn</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="/startups">Startups</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="/investors">Investors</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="/featured">Featured</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="/schools_colleges">Schools/Colleges</a></li>
+              <li><i class="bx bx-chevron-right" style = "color: #FDBC02;"></i> <a href="/learn">Learn</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Subscribe to our newsletter to get all the updates regarding the investors, startups and webinars by EmpowerBharat.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
 
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -394,7 +394,7 @@
 
   
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
 
   <!-- Vendor JS Files -->
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

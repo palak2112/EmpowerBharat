@@ -8,13 +8,13 @@ text-decoration:none;
 font-family:'Open Sans',sans-serif;
 font-weight:300;
 color:#FFFFFF;
-background-color:#957DAD;
+background-color:#0A0A55;
 text-align:center;
 transition: all 0.2s;
 }
 
 a.button3:hover{
-background-color:#D291BC;
+background-color:#FDBC02;
 }
 
 @media all and (max-width:30em){
@@ -36,13 +36,13 @@ a.button4{
     font-family:'Open Sans',sans-serif;
     font-weight:300;
     color:#FFFFFF;
-    background-color:#D291BC;
+    background-color:#FDBC02;
     text-align:center;
     transition: all 0.2s;
     }
     
     a.button4:hover{
-    background-color:#957DAD;
+    background-color:#0A0A55;
     }
     
     @media all and (max-width:30em){

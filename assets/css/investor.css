@@ -4,12 +4,12 @@
 
 .card2 {
     border-radius: 1rem;
-    box-shadow: 0px -10px 0px #D291BC;
+    box-shadow: 0px -10px 0px #FDBC02;
 }
 
 .card3 {
     border-radius: 1rem;
-    box-shadow: 0px 10px #D291BC;
+    box-shadow: 0px 10px #FDBC02;
 }
 
 @media(max-width:767px) {
@@ -62,12 +62,12 @@
 }
 
 a {
-    color: #957DAD;
+    color: #0A0A55;
     /* font-weight: bold */
 }
 
 a:hover {
-    /* color: #D291BC; */
+    /* color: #FDBC02; */
 }
 
 .h22 {
@@ -77,5 +77,5 @@ a:hover {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #957DAD;
+  color: #0A0A55;
 }

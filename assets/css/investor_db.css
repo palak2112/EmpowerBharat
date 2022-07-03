@@ -43,14 +43,14 @@ hr {
   
   a {
     text-decoration: none;
-    color: #957DAD;
+    color: #0A0A55;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
   }
   
   a:hover {
     text-decoration: none;
-    color: #D291BC;
+    color: #FDBC02;
   }
   
   a:not([href]):not([tabindex]) {
@@ -554,15 +554,15 @@ hr {
   
   .btn-primary {
     color: #fff;
-    border-color: #957DAD;
-    background-color: #957DAD;
+    border-color: #0A0A55;
+    background-color: #0A0A55;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
   }
   
   .btn-primary:hover {
     color: #fff;
-    border-color: #957DAD;
-    background-color: #D291BC;
+    border-color: #0A0A55;
+    background-color: #FDBC02;
   }
   
   .btn-primary:focus {
@@ -571,14 +571,14 @@ hr {
   
   .btn-primary:disabled {
     color: #fff;
-    border-color: #957DAD;
-    background-color: #957DAD;
+    border-color: #0A0A55;
+    background-color: #0A0A55;
   }
   
   .btn-primary:not(:disabled):not(.disabled):active {
     color: #fff;
-    border-color: #957DAD;
-    background-color: #957DAD;
+    border-color: #0A0A55;
+    background-color: #0A0A55;
   }
   
   .btn-primary:not(:disabled):not(.disabled):active:focus {

@@ -43,14 +43,14 @@ hr {
   
   a {
     text-decoration: none;
-    color: #D291BC;
+    color: #FDBC02;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
   }
   
   a:hover {
     text-decoration: none;
-    color: #957DAD;
+    color: #0A0A55;
   }
   
   a:not([href]):not([tabindex]) {
@@ -554,15 +554,15 @@ hr {
   
   .btn-primary {
     color: #fff;
-    border-color: #D291BC;
-    background-color: #D291BC;
+    border-color: #FDBC02;
+    background-color: #FDBC02;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
   }
   
   .btn-primary:hover {
     color: #fff;
-    border-color: #D291BC;
-    background-color: #D291BC;
+    border-color: #FDBC02;
+    background-color: #FDBC02;
   }
   
   .btn-primary:focus {
@@ -571,14 +571,14 @@ hr {
   
   .btn-primary:disabled {
     color: #fff;
-    border-color: #D291BC;
-    background-color: #D291BC;
+    border-color: #FDBC02;
+    background-color: #FDBC02;
   }
   
   .btn-primary:not(:disabled):not(.disabled):active {
     color: #fff;
-    border-color: #D291BC;
-    background-color:  #D291BC;
+    border-color: #FDBC02;
+    background-color:  #FDBC02;
   }
   
   .btn-primary:not(:disabled):not(.disabled):active:focus {
@@ -2014,7 +2014,7 @@ hr {
     opacity: 1;
   }
   #hero1 .carousel-indicators .active {
-    background-color: #D291BC;
+    background-color: #FDBC02;
   }
   #hero1 .btn-get-started {
     font-family: "Roboto", sans-serif;
@@ -2030,10 +2030,10 @@ hr {
     color: #fff;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    border: 2px solid #D291BC;
+    border: 2px solid #FDBC02;
   }
   #hero1 .btn-get-started:hover {
-    background: #D291BC;
+    background: #FDBC02;
     color: #fff;
     text-decoration: none;
   }
