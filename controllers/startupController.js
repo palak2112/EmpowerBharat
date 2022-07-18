@@ -9,7 +9,7 @@ module.exports.create = function(req,res){
                 if(err){console.log('Error in creating startup');
 
                  return;}
-                console.log('Investor Created:',startupCreated);
+                console.log('Startup Created:',startupCreated);
                 return res.redirect('/');
             });
         }else{

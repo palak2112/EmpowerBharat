@@ -35,7 +35,7 @@ app.set('views','./views');
 //======== Session Creation ==================
 //mongo store is used to store the session cookie in the db
 app.use(session({
-    name: 'handshake',
+    name: 'empowerbharat',
     //TODO change the secret before deployment in production mode
     secret: 'innovathon',
     saveUninitialized: false,
